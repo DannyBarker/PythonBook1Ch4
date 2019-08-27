@@ -22,7 +22,5 @@ my_family = {
 }
 
 for key,value in my_family.items():
-    arr = list()
-    for nest_value in value.values():
-        arr.append(nest_value)
-        print(arr)
+    print(f"{value['name']} is my {key} and is {str(value['age'])} years old.")
+
