@@ -21,6 +21,9 @@ my_family = {
     }
 }
 
-for key,value in my_family.items():
-    print(f"{value['name']} is my {key} and is {str(value['age'])} years old.")
+# for key,value in my_family.items():
+#     print(f"{value['name']} is my {key} and is {str(value['age'])} years old.")
 
+#Doing it with a comprehension
+
+{ print(f"{value['name']} is my {key} and is {str(value['age'])} years old.") for key,value in my_family.items() }
